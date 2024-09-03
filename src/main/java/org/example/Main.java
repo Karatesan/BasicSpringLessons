@@ -23,6 +23,7 @@ public class Main {
         userService.saveUser(user);
 
         MyUser retrievedUser = userService.findUserByName("John Doe");
+        System.out.println("===================================");
         System.out.println("Retrieved User: " + retrievedUser.getName() + ", Email: " + retrievedUser.getEmail());
 
     context.close();

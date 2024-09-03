@@ -43,10 +43,10 @@ public class AppConfig {
         return em;
     }
 
-//    @Bean
-//    public JpaTransactionManager transactionManager(LocalContainerEntityManagerFactoryBean entityManagerFactory) {
-//        JpaTransactionManager transactionManager = new JpaTransactionManager();
-//        transactionManager.setEntityManagerFactory(entityManagerFactory.getObject());
-//        return transactionManager;
-//    }
+    @Bean
+    public JpaTransactionManager transactionManager(LocalContainerEntityManagerFactoryBean entityManagerFactory) {
+        JpaTransactionManager transactionManager = new JpaTransactionManager();
+        transactionManager.setEntityManagerFactory(entityManagerFactory.getObject());
+        return transactionManager;
+    }
 }
